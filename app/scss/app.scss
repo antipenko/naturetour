@@ -1,0 +1,143 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation/foundation';
+
+@include foundation-global-styles;
+@include foundation-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-close-button;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-flex-video;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-menu;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+
+
+/* Menu */
+a {
+	color:#408F2A;
+}
+.top-bar {
+	background: transparent;
+	.nt-top-bar-info {
+		display: inline-block;
+		font-size: 11px;
+		p {
+			margin: 0;
+		}
+		a {
+			font-size: 1.6rem;
+			color:#111;
+		}
+		.menu{
+			a {
+				font-size: 13px;
+				color:$primary-color;
+				text-transform: uppercase;
+			}
+			li:last-child a {
+				padding-right: 0;
+			}
+		}
+	}
+}
+
+.nt-main-menu {
+	background: $primary-color-gr;
+	border:1px solid rgb(12, 147, 47);
+	border-radius: 5px;
+	box-shadow: inset 2.046px 2.194px 0px 0px rgba(129, 222, 65, 0.004);
+	.menu li {
+		a {
+			font-family: 'Zurich BT';
+			color:#fff;
+			font-size: 14px;
+			text-transform: uppercase;
+			padding: 13px 20px;
+			font-weight: bold;
+			text-shadow: 0px -2px 0px rgba(0, 92, 19, 0.63);
+			&:hover {
+				opacity: 0.9;
+			}
+		}
+	}
+}
+
+.nt-current-page {
+	padding: 15px 0;
+}
+
+/* main-page */
+
+.nt-main {
+	background-color:#fff;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	padding: 17px;
+	&-slide {
+		position: relative;
+		height: 268px;
+		&__info {
+			position: absolute;
+			right: 1px;
+			top: 0;
+			max-width: 233px;
+			height: 100%;
+			background-color: rgba(0,0,0,.8);
+			color:#fff;
+			padding: 1.91rem 1.416rem;
+			border-top-right-radius:5px;
+			border-bottom-right-radius:5px;
+			h2 {
+				font-size: 16px;
+				span {
+					color:$primary-color;
+					font-size: 24px;
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+.nt-offer {
+	position: relative;
+	h2 {
+		width: 420px;
+	}
+	p {
+		width: 420px;
+	}
+	img {
+		position: absolute;
+		right: 20px;
+		bottom: 0;
+	}
+}
