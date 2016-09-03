@@ -130,10 +130,13 @@ a {
 .nt-offer {
 	position: relative;
 	h2 {
+		font-family:$fonts-menu-tabs;
 		width: 420px;
+
 	}
 	p {
 		width: 420px;
+		font-family: $fonts-footer-head;
 	}
 	img {
 		position: absolute;
